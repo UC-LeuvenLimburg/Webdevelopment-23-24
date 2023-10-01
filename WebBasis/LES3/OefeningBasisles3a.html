@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Oefening Lijsten</title>
+</head>
+
+<body>
+	<h1>Deze webpagina bevat voorbeelden van lijsten.</h1>
+	<p><a href="OefeningBasisles3b.html">Klik hier om meer te weten over tabellen</a></p>
+
+	<h2>Ongenummerde lijsten</h2>
+	<p>De volgorde van de ingredi&euml;nten van een recept zijn niet van belang</p>
+	<ul>
+		<li>200gr Bloem</li>
+		<li>4 Eieren</li>
+		<li>&frac12; liter Melk</li>
+	</ul>
+
+	<h2>Genummerde lijsten</h2>
+	<p>De volgorde van de handelingen van het recept zijn vaak wel belangrijk</p>
+	<ol>
+		<li>Doe de bloem in een kom. </li>
+		<li>Voeg hier de eieren aan toe en meng het beslag.</li>
+		<li>Voeg onder voortdurend roeren de melk toe.</li>
+	</ol>
+
+	<h2>Genummerde lijsten met letters start vanaf C zonder klinkers</h2>
+	<ol type="A" start="3">
+		<li>Begin met de letter C</li>
+		<li>Ga dan gewoon verder met D</li>
+		<li value="6">Maar sla E over en ga dus meteen naar F</li>
+		<li>Om dan terug gewoon te vervolgen met G</li>
+	</ol>
+
+	<h2>Ongenummerde lijsten met subonderwerpen</h2>
+	<ul>
+		<li>Wat betekend <dfn>Hogeschool</dfn>?</li>
+		<li><abbr title="UC Leuven-Limburg">UCLL</abbr> staat voor
+			<ul>
+				<li>University College</li>
+				<li>Leuven</li>
+				<li>Limburg</li>
+			</ul>
+		</li>
+		<li><abbr title="Management en Technologie">M&T</abbr> staat voor
+			<ul>
+				<li>Management en</li>
+				<li>Technologie</li>
+			</ul>
+		</li>
+	</ul>
+
+	<h2>Geneste lijsten</h2>
+	<p> Er bestaan verschillende soorten koppelingen
+	<ol type="I">
+		<li>Absolute koppelingen
+			<ol type="a">
+				<li>naar externe webpagina's
+					<ul>
+						<li>of ankerposities op externe webpagina's</li>
+					</ul>
+				</li>
+				<li>naar externe figuren
+
+				</li>
+			</ol>
+		</li>
+
+		<li>Relatieve koppelingen
+			<ol type="a">
+				<li>Naar webpagina's binnen eigen website
+				<li>Naar ankerposities
+					<ul>
+						<li>op dezelfde pagina</li>
+						<li>op andere pagina's </li>
+					</ul>
+				</li>
+				<li>Naar figuren binnen eigen website</li>
+			</ol>
+		</li>
+	</ol>
+
+	<h2>Definitie lijsten</h2>
+	<dl>
+		<dt>Ongenummerde lijsten</dt>
+		<dd>Ongenummerde lijsten worden weergegeven met de tag &lt;ul&gt;, elk item met &lt;li&gt;.</dd>
+		<dt>Genummerde lijsten</dt>
+		<dd>Genummerde lijsten worden weergegeven met de tag &lt;ol&gt;, elk item met &lt;li&gt;.</dd>
+		<dt>Opties voor genummerde lijsten</dt>
+		<dd>Je kunt de attributen style en start meegeven met de &lt;ol&gt; tag.</dd>
+		<dd>Je kunt het attribuut value meegeven met de &lt;li&gt; tag.</dd>
+		<dt>Ongenummerde lijsten met subonderwerp</dt>
+		<dd>Sublijsten krijgen automatisch een ander opsommingsteken</dd>
+		<dt>Geneste lijsten</dt>
+		<dd>Je kunt tags &lt;ol&gt; en &lt;ul&gt; combineren.</dd>
+	</dl>
+
+</body>
+
+</html>

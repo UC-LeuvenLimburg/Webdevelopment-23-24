@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Oefening Formulieren</title>
+</head>
+
+<body>
+	<form action="mailto:mimi.willems@ucll.be?subject=formulier" method="post" enctype="text/plain">
+
+		<!-- ==Persoonlijke gegevens=============================================================== -->
+
+		<fieldset>
+			<legend> Persoonlijke gegevens </legend>
+			<table>
+				<tr>
+					<td><label for="name">Naam: </label></td>
+					<td><input type="text" name="name" id="name" size="40" required="required"></td>
+
+					<td><label for="firstname">Voornaam: </label></td>
+					<td><input type="text" name="firstname" id="firstname" size="30"></td>
+				</tr>
+
+				<tr>
+					<td><label for="address">Adres: </label></td>
+					<td colspan="3"><textarea rows="2" cols="50" name="address" id="address"></textarea></td>
+				</tr>
+
+				<tr>
+					<td><label for="postcode">Postcode: </label></td>
+					<td><input type="text" maxlength="4" name="postcode" id="postcode" size="4"></td>
+
+					<td><label for="city">Gemeente: </label></td>
+					<td><input type="text" name="city" id="city" value="gemeente"></td>
+				</tr>
+
+				<tr>
+					<td><label for="email">Email adres: </label></td>
+					<td colspan="3"><input type="email" name="email" id="email" size="50" required="required"></td>
+				</tr>
+
+				<tr>
+					<td><label for="url">Website: </label></td>
+					<td colspan="3"><input type="url" name="url" id="url" size="50"></td>
+				</tr>
+
+				<tr>
+					<td><label for="gebdat">Geboortedatum: </label></td>
+					<td><input type="date" name="gebdat" id="gebdat"></td>
+					<td><label for="kids">Aantal kinderen: </label></td>
+					<td><input type="number" name="kids" id="kids" required="required"></td>
+				</tr>
+
+				<tr>
+					<td>Geslacht:</td>
+					<td colspan="3">
+						<label><input type="radio" name="sex" value="man">Man </label>
+						<label><input type="radio" name="sex" value="vrouw">Vrouw </label>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<label><input type="checkbox" name="privacy" value="email" checked="checked">
+							Wij mogen u per e-mail contacteren</label>
+					</td>
+					<td colspan="2">
+						<label><input type="checkbox" name="privacy" value="post" checked="checked">
+							Wij mogen u per post contacteren</label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<!-- == Opdracht ============================================================ -->
+
+		<fieldset>
+			<legend>Opdracht</legend>
+			<table>
+				<tr>
+					<td><label for="file">Uploaden: </label></td>
+					<td><input type="file" name="file" id="file"></td>
+					<td><label for="password">Passwoord: </label></td>
+					<td><input type="password" maxlength="12" name="password" id="password" size="12"></td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<select name="select1">
+							<option value="keuze1">Keuze1</option>
+							<option value="keuze2">Keuze2</option>
+							<option value="keuze3">Keuze3</option>
+							<option value="keuze4">Keuze4</option>
+							<option value="keuze5">Keuze5</option>
+						</select>
+					</td>
+
+					<td colspan="2">
+						<select name="select2" size="3" multiple="multiple">
+							<option value="keuze6" selected="selected">Keuze6</option>
+							<option value="keuze7">Keuze7</option>
+							<option value="keuze8">Keuze8</option>
+							<option value="keuze9">Keuze9</option>
+							<option value="keuze10">Keuze10</option>
+						</select>
+
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="search">Zoeken:</label></td>
+					<td colspan="3"><input type="search" name="search" value="Zoeken" id="search"></td>
+				</tr>
+
+				<tr>
+					<td><label for="color">Achtergrondkleur:</label></td>
+					<td><input type="color" name="backgroundcolor" id="color"></td>
+					<td><label for="range">Afwijking:</label></td>
+					<td><input type="range" name="backgroundcolor-range" id="range" min="0" max="255" step="1"
+							value="127"></td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<p>
+			<input type="submit" value="Verstuur">
+			<input type="reset" value="Maak leeg">
+		</p>
+
+	</form>
+
+</body>
+
+</html>
