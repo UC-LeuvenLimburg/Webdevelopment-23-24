@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Load example</title>
+</head>
+<body>
+
+<header></header>
+<aside></aside>
+<footer></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    $("header").load("header.html");
+      
+    fetch('footer.html')
+      .then(response => {return response.text();})
+      .then(body => {document.querySelector('footer').innerHTML = body;})
+
+    async function loadAside(){
+        const response = await fetch('aside.html');
+        const body = await response.text();    
+        return body;
+    }
+    loadAside().then(body => {document.querySelector('aside').innerHTML = body});
+    
+    /*
+    async function loadAside(){
+        const response = await fetch('aside.html');
+        const body = await response.text();  
+        document.querySelector('aside').innerHTML = body;
+    }
+    loadAside();
+    */
+
+</script>
+</body>
+</html>
